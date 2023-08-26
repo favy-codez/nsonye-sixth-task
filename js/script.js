@@ -1,16 +1,15 @@
 const homeboxEl = document.getElementById("homebox-el");
 const guestboxEl = document.getElementById("guestbox-el");
 const periodNum = document.getElementById("period-num");
-const saved = document.getElementById("saved");
+const saveEl = document.getElementById("save-el");
+// const savebtn = document.getElementById("savebtn");
 
-let homebox= 0
-let guestbox = 0
-let periodNo = 1
-
+var homebox= 0
+var guestbox = 0
 
 function add1point() {
-    homebox += 1
-    homeboxEl.textContent = homebox
+    homebox += 1;
+    homeboxEl.textContent = homebox;
     changeColors()
 }
 
@@ -45,7 +44,10 @@ function add4points(){
     changeColors()
 }
 
-
+function save(){
+    var savedEnt = homebox + "-";
+    saveEl.innerText += savedEnt;
+}
 
 function reset() {
     // location.reload()
