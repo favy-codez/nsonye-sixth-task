@@ -45,9 +45,7 @@ function add4points(){
     changeColors()
 }
 
-function save(){
-    saved.textContent = guestbox;
-}
+
 
 function reset() {
     // location.reload()
