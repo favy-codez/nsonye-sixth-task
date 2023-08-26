@@ -19,28 +19,6 @@ body{
     border-radius: 10px;
 }
 
-#period-num{
-    padding: 5px 8px;
-    font-size: 18px;
-    width: 3rem;
-    border-radius: 7px;
-    border: 1px solid #fff;
-    color: #000;
-    text-align: center;
-    background-color: #fff;
-    margin: 3px auto 2rem auto;
-}
-
-#period{
-    padding: 5px 8px;
-    border-radius: 7px;
-    border: 1px solid #fff;
-    background-color: rgb(178, 220, 221);
-    color: #000;
-    margin: 0rem auto 0 auto;
-    cursor: pointer;
-}
-
 .sections {
     display: flex;
     justify-content: space-between;
