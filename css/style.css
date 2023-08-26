@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url(../images/home-bg.webp);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+#mainText{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 1rem 0;
+} 
+
+.container{
+    max-width: 700px;
+    background-color: #000;
+    margin: 7rem auto;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+}
+
+.middle-section img{
+    width: 40%;
+    margin: 12px auto 0 auto;
+    margin-top: 12px;
+}
+
+.middle-section h5{
+    color: rgb(5, 64, 66);
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 1rem;
+}
+
+#period-num{
+    padding: 5px 8px;
+    font-size: 18px;
+    width: 3rem;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+    margin: 3px auto 2rem auto;
+}
+
+#period{
+    padding: 5px 8px;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    background-color: rgb(178, 220, 221);
+    color: #000;
+    margin: 0rem auto 0 auto;
+    cursor: pointer;
+}
+
+#period:hover{
+    color: #fff;
+    background-color: rgb(5, 64, 66);
+    transition: 0.7s;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeSection h3{
+    margin: 0 0 0 10px;
+}
+
+.guestSection h3{
+    margin: 0 0 0 3px;
+}
+
+.homeSection h3, .guestSection h3{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.homescore-box, .guestscore-box {
+    background-color: rgb(5, 64, 66);
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 5px 0 25px 0;
+    padding: 15px 5px;
+}
+
+.homeButtons , .guestButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.homeButtons button, .guestButtons button{
+    padding: 7px 14px;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    background-color: rgb(5, 64, 66);
+    color: #fff;
+    cursor: pointer;
+}
+
+.homeButtons button:hover, .guestButtons button:hover{
+    color: black;
+    background-color: #fff;
+    transition: 0.7s;
+}
+
+#resetBtn{
+    display: block;
+    margin: 1.5rem auto;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: rgb(5, 64, 66);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 22px;
+}
+
+#resetBtn:hover{
+    color: black;
+    background-color: #fff;
+    transition: 0.7s;
+}
+
+.winner{
+    background-color: rgb(24, 157, 161);
+    /* color: #fff; */
+}
+
+.loser{
+    background-color: red;
+    /* color: #fff; */
+}
+
+@media screen and (max-width:375px){
+    .container{
+        max-width: 500px;
+        padding: 2rem 1rem;
+    }
+    .homescore-box, .guestscore-box{
+        padding: 10px 40px;
+        display: inline-block;
+        font-size: 1rem;
+    }
+    .homeSection h3, .guestSection h3{
+        font-size: 1.7rem;
+    }
+    .homeSection h3, .guestSection h3{
+        margin-left: 2.3rem;
+    }
+    .homeButtons, .guestButtons{
+        gap: 5px;
+    }
+    .homeButtons button, .guestButtons button{
+        padding: 4px 9px;
+    }
+    .sections{
+        padding: 0.3rem;
+    }
+    .sections img{
+        display: none;
+    }
+}
