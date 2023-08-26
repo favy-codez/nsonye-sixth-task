@@ -1,8 +1,8 @@
 const homeboxEl = document.getElementById("homebox-el");
 const guestboxEl = document.getElementById("guestbox-el");
 const periodNum = document.getElementById("period-num");
-const saveEl = document.getElementById("save-el");
-// const savebtn = document.getElementById("savebtn");
+const saveEl = document.getElementById("save-el-1");
+const saveEl2 = document.getElementById("save-el");
 
 var homebox= 0
 var guestbox = 0
@@ -44,9 +44,18 @@ function add4points(){
     changeColors()
 }
 
-function save(){
-    var savedEnt = homebox + "-";
+// save function
+function guestSave(){
+    let savedEntry = homebox + " - ";
+    saveEl2.innerText += savedEntry;
+    homeboxEl.textContent = 0;
+}
+
+
+function homeSave(){
+    let savedEnt = guestbox + " - ";
     saveEl.innerText += savedEnt;
+    guestboxEl.textContent = 0;
 }
 
 function reset() {
