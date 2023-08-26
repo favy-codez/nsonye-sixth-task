@@ -1,6 +1,7 @@
-const homeboxEl = document.getElementById("homebox-el")
-const guestboxEl = document.getElementById("guestbox-el")
-const periodNum =document.getElementById("period-num")
+const homeboxEl = document.getElementById("homebox-el");
+const guestboxEl = document.getElementById("guestbox-el");
+const periodNum = document.getElementById("period-num");
+const saved = document.getElementById("saved");
 
 let homebox= 0
 let guestbox = 0
@@ -19,18 +20,10 @@ function add2point() {
     changeColors()
 }
 
-function add3point() {
-    homebox += 3
+function add4point() {
+    homebox += 4
     homeboxEl.textContent = homebox
     changeColors()
-}
-
-// period section
-function period(){
-    if(periodNo <= 3){
-        periodNo += 1
-        periodNum.textContent = periodNo
-    }
 }
 
 // guest section
@@ -41,15 +34,19 @@ function add1points(x) {
 }
 
 function add2points(){
-    guestbox += 2
-    guestboxEl.textContent = guestbox
+    guestbox += 2;
+    guestboxEl.textContent = guestbox;
     changeColors()
 }
 
-function add3points(){
-    guestbox += 3
-    guestboxEl.textContent = guestbox
+function add4points(){
+    guestbox += 4;
+    guestboxEl.textContent = guestbox;
     changeColors()
+}
+
+function save(){
+    saved.textContent = guestbox;
 }
 
 function reset() {
