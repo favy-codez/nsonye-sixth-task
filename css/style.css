@@ -13,18 +13,10 @@ body{
 
 .container{
     max-width: 700px;
-    background-color: #000;
+    background-color: #fff;
     margin: 1rem auto 16rem  auto;
     padding: 1rem 2rem;
     border-radius: 10px;
-}
-
-
-.middle-section h5{
-    color: rgb(5, 64, 66);
-    text-align: center;
-    font-size: 19px;
-    margin-bottom: 1rem;
 }
 
 #period-num{
@@ -49,12 +41,6 @@ body{
     cursor: pointer;
 }
 
-#period:hover{
-    color: #fff;
-    background-color: rgb(5, 64, 66);
-    transition: 0.7s;
-}
-
 .sections {
     display: flex;
     justify-content: space-between;
@@ -72,19 +58,19 @@ body{
 .homeSection h3, .guestSection h3{
     font-size: 3rem;
     font-weight: 500;
-    color: #fff;
+    color: #000;
+    text-align: center;
 }
 
 .homescore-box, .guestscore-box {
-    background-color: rgb(5, 64, 66);
     border: 1px solid #fff;
-    color: #fff;
     text-align: center;
     font-size: 3rem;
     font-weight: 500;
     border-radius: 5px;
     margin: 5px 0 25px 0;
     padding: 15px 5px;
+    color: #000;
 }
 
 .homeButtons , .guestButtons {
@@ -96,9 +82,10 @@ body{
     padding: 7px 14px;
     border-radius: 7px;
     border: 1px solid #fff;
-    background-color: rgb(5, 64, 66);
+    background-color: rgb(35, 47, 212);
     color: #fff;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .homeButtons button:hover, .guestButtons button:hover{
