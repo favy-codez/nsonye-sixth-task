@@ -11,26 +11,14 @@ body{
     background-repeat: no-repeat; 
 }
 
-#mainText{
-    font-size: 2rem;
-    color: #fff;
-    text-align: center;
-    margin: 0 0 1rem 0;
-} 
-
 .container{
     max-width: 700px;
     background-color: #000;
-    margin: 7rem auto;
-    padding: 2rem 4rem;
+    margin: 1rem auto 16rem  auto;
+    padding: 1rem 2rem;
     border-radius: 10px;
 }
 
-.middle-section img{
-    width: 40%;
-    margin: 12px auto 0 auto;
-    margin-top: 12px;
-}
 
 .middle-section h5{
     color: rgb(5, 64, 66);
