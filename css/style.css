@@ -16,7 +16,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: 1rem auto ;
 }
 
@@ -81,21 +81,9 @@ body{
     transition: 0.7s;
 }
 
-#resetBtn{
-    display: block;
-    /* margin: 1.5rem auto; */
-    cursor: pointer;
-    border-radius: 12px;
-    background-color: rgb(35, 47, 212);
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 7px 14px;
-}
-
-#resetBtn:hover{
-    color: #fff;
-    background-color: rgb(15, 22, 126);
-    transition: 0.7s;
+.save-text{
+    width:320px;
+    height: 90px;
 }
 
 .winner{
@@ -113,13 +101,56 @@ body{
     text-align: center;
 }
 
+@media screen and (max-width:912px){
+    body{
+        padding: 12px 2rem;
+    }
+}
+
+@media screen and (max-width:820px){
+    body{
+        padding: 12px 1rem;
+    }
+    .sections {
+        max-width: 720px;
+    }
+    .guestSection, .homeSection{
+        padding: 1rem 0.5rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        padding: 12px 1.2rem;
+    }
+    .homeSection, .guestSection{
+        padding:0.5rem;
+    }
+}
+
+@media screen and (max-width:540px){
+    body{
+        padding: 12px 0.2rem;
+    }
+    .homeButtons, .guestButtons{
+        flex-direction:column;
+        padding:0 1rem;
+    }
+    .sections {
+        max-width: 620px;
+    }
+    .save-text{
+        padding: 12px 1.2rem;
+    }
+}
+
 @media screen and (max-width:375px){
     .container{
         max-width: 500px;
         padding: 2rem 1rem;
     }
     .homescore-box, .guestscore-box{
-        padding: 10px 40px;
+        padding: 10px 20px;
         display: inline-block;
         font-size: 1rem;
     }

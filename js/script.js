@@ -45,17 +45,19 @@ function add4points(){
 }
 
 // save function
-function guestSave(){
+function homeSave(){
     let savedEntry = homebox + " - ";
-    saveEl2.innerText += savedEntry;
+    saveEl.textContent += savedEntry;
     homeboxEl.textContent = 0;
+    homebox = 0;
 }
 
 
-function homeSave(){
+function guestSave(){
     let savedEnt = guestbox + " - ";
-    saveEl.innerText += savedEnt;
+    saveEl2.textContent += savedEnt;
     guestboxEl.textContent = 0;
+    guestbox = 0;
 }
 
 function reset() {
