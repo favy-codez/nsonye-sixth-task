@@ -129,7 +129,7 @@ body{
         padding: 12px 1.2rem;
     }
     .homeSection, .guestSection{
-        padding: 2rem;
+        padding: 2rem 1.5rem;
     }
     .sections{
         max-width: 680px;
@@ -141,14 +141,25 @@ body{
         padding: 12px 0.2rem;
     }
     .homeButtons, .guestButtons{
-        flex-direction:column;
         padding:0 1rem;
     }
     .sections {
         max-width: 620px;
+        flex-direction: column;
+        margin: 5px auto;
+        gap: 1rem;
     }
-    .save-text{
-        padding: 12px 1.2rem;
+    .homeSection, .guestSection{
+        max-width: 300px;
+        padding: 1rem 1.5rem;
+    }
+}
+@media screen and (max-width:414px){
+    .homeButtons, .guestButtons{
+        padding: 0 ;
+    }
+    .sections {
+        margin: 6rem auto;
     }
 }
 
@@ -159,23 +170,24 @@ body{
     }
     .homescore-box, .guestscore-box{
         padding: 10px 20px;
-        display: inline-block;
+        display: block;
+        width: 80px;
+        margin: 15px auto;
         font-size: 1rem;
     }
     .homeSection h3, .guestSection h3{
         font-size: 1.7rem;
     }
-    .homeSection h3, .guestSection h3{
-        margin-left: 2.3rem;
-    }
     .homeButtons, .guestButtons{
         gap: 5px;
+        margin: 10px auto;
     }
     .homeButtons button, .guestButtons button{
         padding: 4px 9px;
     }
     .sections{
         padding: 0.3rem;
+        margin: 4rem auto;
     }
     .sections img{
         display: none;
