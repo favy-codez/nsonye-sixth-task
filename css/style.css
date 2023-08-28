@@ -82,19 +82,17 @@ body{
     transition: 0.7s;
 }
 
-.save-text{
+/* .save-text{
     width:320px;
-    height: 90px;
-}
+    height: 40px;
+} */
 
 .winner{
     background-color: rgb(24, 157, 161);
-    /* color: #fff; */
 }
 
 .loser{
     background-color: red;
-    /* color: #fff; */
 }
 
 .saved{
@@ -116,9 +114,6 @@ body{
         max-width: 720px;
         flex-direction: column;
         gap: 2rem;
-    }
-    .guestSection, .homeSection{
-        padding: 1rem 0.5rem;
     }
 }
 
