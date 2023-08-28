@@ -193,3 +193,12 @@ body{
         display: none;
     }
 }
+@media screen and (max-width:280px){
+    .homeSection, .guestSection{
+        max-width: 320px;
+        padding: 1rem 0.9rem
+    }
+    .container{
+        padding: 1rem;
+    }
+}
